@@ -1,24 +1,23 @@
 # Azure Stack Cloud Burst 
 Learn how to create a cross-cloud solution to provide a manually triggered process for switching from an Azure Stack hosted web app, to an Azure hosted web app with auto-scaling via traffic manager, ensuring flexible and scalable cloud utility when under load.
 
-For some businesses it may not be economically feasible to maintain the capacity required in their on-premises environment to handle spikes in demand for the app. Your tenant can take use the elasticity of the public cloud with their on-premises solution.
+For most businesses it may not be economically feasible to maintain the capacity required in their on-premises environment to handle spikes in demand for the app. The tenant can take use the elasticity of the public cloud with their on-premises solution.
 
-![img/cloudburst_architecture_1.png]()
+![Cloud Burst Architecture](/img/cloudburst_architecture_1.jpg)
 
-##  Context and Considerations
-There are some distinctions between one-node Azure Stack Development Kit (ASDK), and multi-node Azure Stack Integrated System:
- * ASDK utilizes a public IP address, while maintaining its own VM with a separate and defined private network.
- * Azure Stack Integrated System integrates with your datacenter and has an entire IP address range to delegate to the system during installation. This requires some specialized setup and configuration for the Azure stack isolated environment. Software-defined networking requires only four cables connecting an Azure Stack machine to the outside network.
- 
+##  Considerations
 ### Scalability considerations
 The key component of cross-cloud Scaling (or cloud burst) is the ability to deliver immediate, on-demand scaling between public and on-premises cloud infrastructure, proving consistent, reliable service as prescribed by the demand.
 ### Availability considerations
 Ensure locally deployed apps are configured for high-availability through on-premises hardware configuration and software deployment.
 ### Manageability considerations. 
-The cross burst solution ensures seamless management and familiar interface between environments. PowerShell is recommended for cross-platform management.
+The cloud burst solution ensures seamless management and familiar interface between environments. PowerShell is recommended for cross-platform management.
 
 # Prerequisites
-
+There are some distinctions between single-node Azure Stack Development Kit (ASDK), and multi-node Azure Stack Integrated System:
+ * ASDK utilizes a public IP address, while maintaining its own VM with a separate and defined private network.
+ * Azure Stack Integrated System integrates with your datacenter and has an entire IP address range to delegate to the system during installation. This requires some specialized setup and configuration for the Azure stack isolated environment.
+ 
 **Azure Stack**
   - Firewall and or router appliance needs to know how to route traffic to and from Azure Stack environment
   - An Azure Stack Environment.
