@@ -86,6 +86,6 @@ This architecture consists of the following components:
 ## Create Azure Stack Resources
 
 ## Create Azure Resources
-
+Goto [Deployment/Azure](/Deployment/Azure/) and click on "Deploy to Azure" to deploy the required resources to your Azure Subscription.
 
 
