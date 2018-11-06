@@ -52,3 +52,40 @@ Verify that you have met the following criteria before beginning your configurat
   - Ensure all resources are deployed in the same region/location.
 
 For more information about VPN Gateway settings in general, see [About VPN Gateway Settings](https://docs.microsoft.com/en-us/azure/vpn-gateway/vpn-gateway-about-vpn-gateway-settings).
+
+# Reference Architecture
+This section details the reference architecture that can be used as a guidance to implement the offer.
+
+## High Level Overview
+![Cloud Burst Architecture](/img/cloudburst_architecture_1.jpg)
+
+This architecture consists of the following components:
+### Azure Resources
+ * Azure App Service
+ * Azure Virtual Network
+   * Application Subnet
+   * Gateway Subnet
+ * Azure Local Network Gateway
+ * Azure Virtual Network Gateway 
+ * Azure Public IP Address
+ * Azure Site-to-Site (S2S) VPN
+ * Azure Traffic Manager
+ 
+### Azure Stack Resources
+ * Azure Stack App Service
+ * Azure Stack Virtual Network
+   * Application Subnet
+   * Gateway Subnet
+ * Azure Stack Local Network Gateway
+ * Azure Stack Virtual Network Gateway 
+ * Azure Stack Public IP Address
+ * Azure Stack Site-to-Site (S2S) VPN
+ 
+# Implementation
+
+## Create Azure Stack Resources
+
+## Create Azure Resources
+
+
+
